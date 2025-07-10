@@ -23,3 +23,11 @@ func third(name: String) -> String {
     return "Hello, \(name)"
 }
 print(third(name: "Vika"))
+
+//2. Написать функцию, которая принимает две строки и возвращает сумму количества
+//символов двух строк.
+
+func strings(firstString: String, secondString: String) -> Int {
+    return firstString.count + secondString.count
+}
+print("Сумма символов двух строк равна \(strings(firstString: "fghjkl", secondString: "fjml"))")
