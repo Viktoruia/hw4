@@ -177,3 +177,9 @@ let words = ["Hi" , "!", "My" , "nam's", "Vika"]
 print(words.enumerated().forEach { numderString, words in
     print("Строка \(words), номер строки \(numderString + 1)")
 })
+
+//4. Преобразовать все слова в массиве в верхний регистр.
+let bigStrings = words.map { words in
+    words.uppercased()
+}
+print(bigStrings)
