@@ -94,3 +94,23 @@ func simplNumber(a: Int) -> Bool {
     return true
 }
 print(simplNumber(a: 11))
+
+//8. Создать функцию, принимающую 1 аргумент — номер месяца (от 1 до 12), и
+//возвращающую время года, которому этот месяц принадлежит (зима, весна, лето или
+//осень).
+
+func month(numberMonth: Int) -> String {
+    switch numberMonth {
+    case 1, 2, 12:
+        return "Зима"
+    case 3...5:
+        return "Весна"
+    case 6...8:
+        return "Лето"
+    case 9...11:
+        return "Осень"
+    default:
+        return "Такого месяца нет"
+    }
+}
+print(month(numberMonth: 10))
