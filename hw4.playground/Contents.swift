@@ -183,3 +183,9 @@ let bigStrings = words.map { words in
     words.uppercased()
 }
 print(bigStrings)
+
+//5. Оставить только те слова в массиве, длина которых больше 5 символов.
+let sortedWords = words.filter {
+    $0.count >= 5
+}
+print(sortedWords)
