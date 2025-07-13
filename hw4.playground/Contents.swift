@@ -202,3 +202,13 @@ func sortedNumbers(from numbers: [Int]) -> [String] {
 }
 let strings = sortedNumbers(from: numbers)
 print(strings)
+
+//7. Объединить все слова из массива в одну строку с пробелами.
+let sumWords = words.reduce("" , { (sumWords, string) -> String in
+    if sumWords.isEmpty {
+        return string
+    } else {
+        return sumWords + " " + string
+    }
+})
+print(sumWords)
