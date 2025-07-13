@@ -142,3 +142,17 @@ func fibo(index: Int) -> [Int]{
     return number
 }
 print("Последовательность фибоначи - \(fibo(index: 9))")
+
+//11*. Создать функцию, которая считает сумму цифр четырехзначного числа,
+//переданного в параметры функции
+
+func summNumbers(number: Int) -> Int {
+        var sum = 0
+        var newNumber = number
+        while newNumber > 0 {
+            sum += newNumber % 10
+            newNumber /= 10
+        }
+    return sum
+}
+print(summNumbers(number: 1234))
