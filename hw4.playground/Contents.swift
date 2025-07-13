@@ -68,3 +68,14 @@ func areaCircle(const: Double, radius: Double) -> Double {
     return const * radius * radius
 }
 print("Площадь круга равна - \(areaCircle(const: Double.pi, radius: 12.3))")
+
+//6. Создать функцию, которая принимает логический тип “ночь ли сегодня” и возвращает
+//строку с описанием времени суток.
+func isDay(isNigt: Bool) -> String {
+    if isNigt == true{
+        return "Сегодня ночь"
+    } else {
+        return "Сегодня день"
+    }
+}
+print(isDay(isNigt: false))
