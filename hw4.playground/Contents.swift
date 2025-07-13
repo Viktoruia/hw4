@@ -31,3 +31,11 @@ func strings(firstString: String, secondString: String) -> Int {
     return firstString.count + secondString.count
 }
 print("Сумма символов двух строк равна \(strings(firstString: "fghjkl", secondString: "fjml"))")
+
+//3. Написать функцию, которая выводит в консоль квадрат переданного числа.
+
+func square(number: Int) -> Int {
+    return number * number
+}
+print("Квадрат числа равен - \(square(number: 4))")
+
