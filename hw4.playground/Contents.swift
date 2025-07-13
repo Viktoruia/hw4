@@ -79,3 +79,18 @@ func isDay(isNigt: Bool) -> String {
     }
 }
 print(isDay(isNigt: false))
+
+//7. Создать функцию, принимающую 1 аргумент — число от 0 до 100, и возвращающую
+//true, если оно простое, и false, если сложное.
+
+func simplNumber(a: Int) -> Bool {
+    if a >= 2 {
+        for i in 2 ..< a {
+            if a % i == 0 {
+                return false
+            }
+        }
+    } else {return false}
+    return true
+}
+print(simplNumber(a: 11))
