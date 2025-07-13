@@ -156,3 +156,12 @@ func summNumbers(number: Int) -> Int {
     return sum
 }
 print(summNumbers(number: 1234))
+
+// Дополнительно(функции высшего порядка:
+//1. Есть массив целых чисел. Необходимо получить массив строк, где каждое число возведено в квадрат и записано как текст.
+
+let numbers = [1, 2, 3, 4, 5, 6]
+let newNumber = numbers.map { numbers in
+    String(numbers * numbers)
+}
+print(newNumber)
