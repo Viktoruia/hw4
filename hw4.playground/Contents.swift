@@ -171,3 +171,9 @@ let filtrNumber = numbers.filter {
     $0 % 2 == 0
 }
 print(filtrNumber)
+
+//3. Напечатать каждую строку из массива, добавив к ней её номер (нумерация с 1).
+let words = ["Hi" , "!", "My" , "nam's", "Vika"]
+print(words.enumerated().forEach { numderString, words in
+    print("Строка \(words), номер строки \(numderString + 1)")
+})
