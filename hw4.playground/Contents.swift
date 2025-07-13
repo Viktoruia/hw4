@@ -114,3 +114,16 @@ func month(numberMonth: Int) -> String {
     }
 }
 print(month(numberMonth: 10))
+
+//9*. Создать функцию, которая считает факториал введённого числа.
+func factorial(a: Int) -> Int{
+    if a == 0 {
+        return 0
+    }
+    var res = 1
+    for i in 1...a {
+        res *= i
+    }
+    return res
+}
+print("Факториал введённого числа равен - \(factorial(a: 4))")
