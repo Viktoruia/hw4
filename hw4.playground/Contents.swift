@@ -127,3 +127,18 @@ func factorial(a: Int) -> Int{
     return res
 }
 print("Факториал введённого числа равен - \(factorial(a: 4))")
+
+//10*. Создать функцию, которая выводит все числа последовательности Фибоначчи до
+//введённого индекса. Например fib(n:6) -> 0, 1, 1, 2, 3, 5, 8
+func fibo(index: Int) -> [Int]{
+    var number = [0, 1]
+    if index <= 1 {
+        return number.prefix(index + 1).map { $0 }
+    }
+    for i in 2...index {
+        let nextFibo = number[i - 1] + number[i - 2]
+        number.append(nextFibo)
+    }
+    return number
+}
+print("Последовательность фибоначи - \(fibo(index: 9))")
