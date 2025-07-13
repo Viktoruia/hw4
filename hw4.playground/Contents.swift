@@ -189,3 +189,16 @@ let sortedWords = words.filter {
     $0.count >= 5
 }
 print(sortedWords)
+
+//6. Преобразовать массив чисел в массив строк “четное” / “нечетное”.
+func sortedNumbers(from numbers: [Int]) -> [String] {
+    return numbers.map {
+        if $0 % 2 == 0 {
+            return "четное"
+        } else {
+            return "не четное"
+        }
+    }
+}
+let strings = sortedNumbers(from: numbers)
+print(strings)
