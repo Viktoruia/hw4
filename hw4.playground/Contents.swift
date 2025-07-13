@@ -165,3 +165,9 @@ let newNumber = numbers.map { numbers in
     String(numbers * numbers)
 }
 print(newNumber)
+
+//2. Отфильтровать только чётные числа из массива.
+let filtrNumber = numbers.filter {
+    $0 % 2 == 0
+}
+print(filtrNumber)
