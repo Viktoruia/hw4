@@ -61,3 +61,10 @@ func div(a: Int, b: Int) -> Int {
     return a / b
 }
 print("Частное чисел равно - \(div(a: 45, b: 5))")
+
+//5. Создать функцию, которая принимает параметры и вычисляет площадь круга.
+
+func areaCircle(const: Double, radius: Double) -> Double {
+    return const * radius * radius
+}
+print("Площадь круга равна - \(areaCircle(const: Double.pi, radius: 12.3))")
