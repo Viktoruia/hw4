@@ -39,3 +39,25 @@ func square(number: Int) -> Int {
 }
 print("Квадрат числа равен - \(square(number: 4))")
 
+//4. Создать функции, которые будут суммировать, вычитать, умножать и делить числа
+//sum(num1:num2:).
+
+func summ(a: Double, b: Double) -> Double {
+    return a + b
+}
+print("Сумма чисел равна - \(summ(a: 34.654578708846758, b: 65.7567894567895678))")
+
+func difference(a: Int, b: Int) -> Int {
+    return a - b
+}
+print("Разность чисел равна - \(difference(a: 45, b: 23))")
+
+func myltiply(a: Float, b: Float) -> Float {
+    return a * b
+}
+print("Произведение чисел равно - \(myltiply(a: 2.345678, b: 3.345))")
+
+func div(a: Int, b: Int) -> Int {
+    return a / b
+}
+print("Частное чисел равно - \(div(a: 45, b: 5))")
