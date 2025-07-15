@@ -118,7 +118,7 @@ print(month(numberMonth: 10))
 //9*. Создать функцию, которая считает факториал введённого числа.
 func factorial(a: Int) -> Int{
     if a == 0 {
-        return 0
+        return 1
     }
     var res = 1
     for i in 1...a {
@@ -174,9 +174,9 @@ print(filtrNumber)
 
 //3. Напечатать каждую строку из массива, добавив к ней её номер (нумерация с 1).
 let words = ["Hi" , "!", "My" , "nam's", "Vika"]
-print(words.enumerated().forEach { numderString, words in
+words.enumerated().forEach { numderString, words in
     print("Строка \(words), номер строки \(numderString + 1)")
-})
+}
 
 //4. Преобразовать все слова в массиве в верхний регистр.
 let bigStrings = words.map { words in
